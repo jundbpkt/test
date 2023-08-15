@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Block element motify -->
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Xin Kính Chào Quý Khách
+
+                            <!-- QR code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/admin.png" alt="QR code"
+                                class="header__qr-img">
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-poiner">
+                                Kết Nối
+                            </span>
+                            <a href="https://www.facebook.com/profile.php?id=100013768182126&mibextid=LQQJ4d" class="header__navbar-icon-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="header__navbar-icon">
+                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                                </svg> 
+                            </a>
+                            <a href="https://www.instagram.com/duccuong18071990/" class="header__navbar-icon-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="header__navbar-icon">
+                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="header__navbar-icon">
+                                    <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
+                                </svg>
+                                Thông Báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://samngoclinh.quangnam.vn/wp-content/uploads/2020/01/z2033111744867_0282cf092cf7081faff0b5cb74b3507e.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Củ Sâm Ngọc Linh</span>
+                                                <span class="header__notify-descriotion">Sâm Ngọc Linh Giúp Tăng Cường Sinh Lý</span> 
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://samngoclinh.quangnam.vn/wp-content/uploads/2020/01/0aec2d31cc3e84ba0f248be7e9cd080d-1-533x400.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tìm Hiểu về dân tộc tìm ra loài Sâm Ngọc Linh</span>
+                                                <span class="header__notify-descriotion">ồng bào dân tộc Xê Đăng ở tỉnh Kon Tum đã tiến hành tái hiện Lễ mừng lúa mới độc đáo của dân tộc mình.</span> 
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://samngoclinh.quangnam.vn/wp-content/uploads/2020/01/phan-biet-sam-ngoc-linh-that-gia-qua-vo-ngoai-768x768-1-600x600.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Đặc Điểm Cây Sâm Ngọc Linh Là Gì?</span>
+                                                <span class="header__notify-descriotion">Sâm Ngọc Linh có hình dạng thân khí sinh thẳng đứng, màu lục hoặc hơi tím, nhỏ, có đường kính thân độ 4-8mm, thường tàn lụi hàng năm tuy thỉnh thoảng cũng tồn tại một vài thân trong vài năm.</span> 
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem Tất Cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="header__navbar-icon">
+                                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                                </svg>
+                                Trợ Giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
+                            <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li> -->
+                            <!-- Login -->
+
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/alol.JPG" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Trần Cường</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài Khoản Của Tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa Chỉ</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn Mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </li>                            
+                    </ul>
+                        
+
+                </nav>
+            <!--header search  -->
+                <div class="header-with-search">
+                    
+                    <div class="header__logo">
+                        <img src="./assets/img/Tran cuong.svg" alt="logo img"
+                        class="header__logo-img">
+                    
+                    </div>
+
+                    <div class="header__search">
+                       
+                        <div class="header__search-input-wrap">
+
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                  <li class="header__search-history-item">
+                                    <a href="">Sâm tự nhiên</a>
+                                  </li>
+                                  <li class="header__search-history-item">
+                                    <a href="">Tìm cửa hàng</a>
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header__search-select">
+
+                            <span class="header__search-select-label">Search</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" class="header__search-select-icon">
+                            <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
+                            </svg>                    
+                        </div>
+                    
+                    </div>
+                        <!-- Cart layout -->
+                    <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" class="header__cart-icon">
+                                    <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                </svg>
+                                <!-- No cart: header__cart-list--no-cart -->
+                                <div class="header__cart-list header__cart-list--no-cart">
+                                    <img src="./assets/img/header cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                    </span>
+                                </div>
+                                
+                            </div>      
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__column-2">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            <i class="category__heading-icon fa-solid fa-list"></i>
+                            Danh Mục
+                        </h3>
+                            
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="#" class="category-item__link">Sản phẩm mới</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Best seller</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Nước tăng lực</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Nước uống collagen</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#" class="category-item__link">Sữa dê</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="grid__column-10">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Sắp xếp theo</span>
+                        <button class="home-filter__btn btn">Phổ biến</button>
+                        <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                        <button class="home-filter__btn btn">Bán chạy</button>
+
+                        <div class="select-input">
+                            <span class="select-input__label">Giá</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Cao xuống thấp</a>
+                                    
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Thấp lên cao</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-current">1</span>/4
+                            </span>
+
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-btn home-filter__page-btn--disabled ">
+                                    <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
+                                </a>
+                                <a href="" class="home-filter__page-btn">
+                                    <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <!-- product item -->
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2023/06/premium-gold-2-600x600.jpg)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Rượu Sâm Ngọc Linh K5 Premium
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.860.000đ</span>
+                                            <span class="home-product-item__price-current">1.674.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">88 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>       
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2023/04/hoop-10-1.jpg)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            TPBS Collagen – Sâm Ngọc Linh – Tổ Yến Noliko
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">88.000đ</span>
+                                            <span class="home-product-item__price-current">500.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <!-- <span class="home-product-item__sold">88 Đã bán</span> -->
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>       
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2023/03/quoc-tuu-900x900-1-600x600.jpg)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Rượu Quốc Tửu K5
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">0</span> -->
+                                            <span class="home-product-item__price-current">5.200.000</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">534 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Sản phẩm giới hạn</span>
+                                         </div>
+                                         <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">Best sell</span>
+                                            <!-- <span class="home-product-item__sale-off-label">Giảm</span> -->
+                                         </div>       
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2023/03/post-thao-duoc-900x900-nen-trang-600x600.jpg)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Thực Phẩm Bổ Sung Nước Tăng Lực Sâm Ngọc Linh K5
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">1.860.000đ</span> -->
+                                            <span class="home-product-item__price-current">12.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">2091 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>       
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2022/11/09_Hop-qua-Loc-Xuan-600x600.jpg)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Hộp Quà Lộc Xuân
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">1.860.000đ</span> -->
+                                            <span class="home-product-item__price-current">1.850.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">357 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <!-- <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>        -->
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2022/04/nightwolf245-thung-600x600.png)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            [Thùng/24Lon]Nước tăng lực Night Wolf vị nguyên bản 320ml
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">1.860.000đ</span> -->
+                                            <span class="home-product-item__price-current">472.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">153 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <!-- <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>        -->
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2022/06/Combo-phu-quy-600x598.jpg)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Combo Phú Quý
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">1.860.000đ</span> -->
+                                            <span class="home-product-item__price-current">4.390.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">51 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <!-- <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>        -->
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2022/05/ruouSamCuNgam-600x600.png)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Rượu củ tươi Sâm Ngọc Linh ngâm bình
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">1.860.000đ</span> -->
+                                            <span class="home-product-item__price-current">Liên hệ tư vấn</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <!-- <span class="home-product-item__sold">88 Đã bán</span> -->
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Giới hạn</span>
+                                         </div>
+                                         <!-- <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>        -->
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2022/05/de-say-sau-rieng-600x600.jpg)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Sữa chua dê sầu riêng sấy thăng hoa
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">108.000đ</span>
+                                            <span class="home-product-item__price-current">76.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">2448 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">30%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>       
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2022/03/love20-women-600x600.png)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            TPBVSK LOVE GOOD FOR WOMEN’S HEALTH 20
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">1.860.000đ</span> -->
+                                            <span class="home-product-item__price-current">885.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">3009 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Mua 2 tặng 1</span>
+                                         </div>
+                                         <!-- <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>        -->
+                                    </div>
+                                </a>
+                                    
+                             </div>
+                             <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://samngoclinh.vn/wp-content/uploads/2022/03/gold2-600x600.png)">
+                                            
+                                         <h4 class="home-product-item__name">
+                                            Rượu Sâm Ngọc Linh K5 (nhãn Vàng)
+                                         </h4>
+                                         <div class="home-product-item__price">
+                                            <!-- <span class="home-product-item__price-old">1.860.000đ</span> -->
+                                            <span class="home-product-item__price-current">1.760.000đ</span>
+                                         </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">3060 Đã bán</span>
+                                            </div>
+                                         <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">shop</span>
+                                            <span class="home-product-item__origin-name">Ngọc linh</span>
+                                         </div>
+                                         <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                         </div>
+                                         <!-- <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                         </div>        -->
+                                    </div>
+                                </a>
+                                    
+                             </div>
+
+                             
+                             
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+           </div>
+            
+        </div>
+        
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <!-- Modal layout -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body"> -->
+            
+<!--            
+            <div class="auth-form">
+            </div> -->
+
+            <!-- Login form -->
+           
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                  </div>
+
+                  <div class="auth-form__group">
+              
+                      <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                  </div>
+
+                  <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                  </div>
+
+                  <div class="auth-form__controls">
+                        <button class="btn btn--nomal auth-form__controls-back">Trở Lại</button>
+                        <button class="btn btn--primary">Đăng Nhập</button>
+                  </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="https://www.facebook.com/profile.php?id=100013768182126&mibextid=LQQJ4d" 
+                    class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-square-facebook">
+                         <span class="auth-form__socials-title">
+                            Đăng nhập facebook
+                         </span>
+                        </i>
+                    </a>
+
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google">
+                            <span class="auth-form__socials-title">
+                                Kết nối google
+                             </span>
+                        </i>
+                    </a>
+                </div>
+
+            </div> -->
+
+        </div>
+    </div>
+</body>
+</html>
